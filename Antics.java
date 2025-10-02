@@ -102,11 +102,4 @@ public class Antics {
         }
         return str.substring(0, 1).toUpperCase() + str.substring(1);
     }
-
-    public static void main(String[] args) {
-        System.out.println(isPalindrome("RaceCar")); // true
-        System.out.println(isAbecedarian("almost")); // true
-        System.out.println(isPangram("The quick brown fox jumps over the lazy dog")); // true
-        System.out.println(capitalizeFirstLetter("california")); // California
-    }
 }
