@@ -21,9 +21,6 @@
  * @author Thayssa De Moura
  * @since 09-26-2025
  */
-//test
-import java.util.HashSet;
-import java.util.Set;
 
 public class Antics {
     /**
@@ -31,7 +28,7 @@ public class Antics {
      * A palindrom word reads the same forwards and backwards (ignoring case).
      * Examples: Abba, Anna, civic, kayak, level, noon, racecar, radar, refer, rotator.
      * 
-     * @param str the input string to be checked
+     * @param str the input string to be checked.
      * @return true if the string is a palindrome, false otherwise.
      */
     public static boolean isPalindrome(String str) {
@@ -56,11 +53,12 @@ public class Antics {
      * A word is abecedarian if its letters are arranged in alphabetically.
      * Examples: accent, access, almost, below, biopsy.
      * 
-     * @param str the input string to be checked
+     * @param str the input string to be checked.
      * @return true if the string is abecedarian (alphabetically ordered), false otherwise.
      */
     public static boolean isAbecedarian(String str) {
         str = str.toLowerCase(); // ignore case
+        
         for (int i = 0; i < str.length()-1; i++) {
             if (str.charAt(i) > str.charAt(i+1)) {
                 return false;
@@ -76,19 +74,18 @@ public class Antics {
      * This method ignores case and non-letter characters.
      * Example: The quick brown fox jumps over the lazy dog. 
      * 
-     * @param str the input string to be checked
+     * @param str the input string to be checked.
      * @return true if the string is a pangram, false otherwise.
     */
     public static boolean isPangram(String str) {
         str = str.toLowerCase(); // ignore case
-        Set<Character> letters = new HashSet<>();
-
-        for (char ch : str.toCharArray()) {
-            if (ch >= 'a' && ch <= 'z') {
-                letters.add(ch);
+        
+        for (char c = 'a'; c <= 'z'; c++) {
+            if (str.indexOf(c) == -1) {
+                return false;
             }
-        }   
-        return letters.size() == 26;
+        }
+        return true;
     }
 
     /**
@@ -97,7 +94,7 @@ public class Antics {
      * Example: california -> California
      * 
      * @param str the input string (its first letter to be capitalized).
-     * @return the same string with its first letter (only) capitalized
+     * @return the same string with its first letter (only) capitalized.
      */
     public static String capitalizeFirstLetter(String str) {
         if (str == null || str.isEmpty()) {
