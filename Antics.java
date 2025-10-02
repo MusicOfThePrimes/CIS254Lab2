@@ -17,8 +17,8 @@
  *     StringUtils.capitalizeFirstLetter("java");   // "Java"
  * </pre>
  * 
- * @author Huilin Reid
- * @author Thayssa De Moura
+ * @author Huilin Reid (isPalindrome and isAbecedarian)
+ * @author Thayssa De Moura (isPangram and capitalizeFirstLetter)
  * @since 09-26-2025
  */
 
