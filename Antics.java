@@ -11,10 +11,10 @@
  * <p>
  * Example usage:
  * <pre>
- *     StringUtils.isPalindrome("Racecar");         // true
- *     StringUtils.isAbecedarian("almost");         // true
- *     StringUtils.isPangram("The quick brown fox jumps over the lazy dog"); // true
- *     StringUtils.capitalizeFirstLetter("java");   // "Java"
+ *     Antics.isPalindrome("Racecar");         // true
+ *     Antics.isAbecedarian("almost");         // true
+ *     Antics.isPangram("The quick brown fox jumps over the lazy dog"); // true
+ *     Antics.capitalizeFirstLetter("java");   // "Java"
  * </pre>
  * 
  * @author Huilin Reid (isPalindrome and isAbecedarian)
